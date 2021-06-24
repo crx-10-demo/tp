@@ -20,7 +20,7 @@ export default {
   // target: 'server',
   target: 'static',
   router: {
-    base: '/',
+    base: '/tp/',
   },
   /*
    ** Headers of the page
