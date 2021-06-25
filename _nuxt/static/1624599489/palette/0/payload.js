@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/palette/0", {data:[{}],fetch:{},mutations:void 0});
