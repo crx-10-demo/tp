@@ -174,20 +174,40 @@
         <v-card outlined class="fill-height my-5">
           <v-container>
             状態ランプ色<br /><br />
-            <!-- <ul>
-              <li>段取り未完</li>
-              <li>段取り完了</li>
-              <li>実行中</li>
-              <li>終了</li>
-            </ul> -->
-            <p><span class="EqualString">段取り未完</span>：白</p>
-            <br />
-            <p><span class="EqualString">段取り完了</span>：青</p>
-            <br />
-            <p><span class="EqualString">実行中</span>：緑</p>
-            <br />
-            <p><span class="EqualString">終了</span>：オレンジ</p>
-            <br />
+            <table>
+              <tr>
+                <td>
+                  <p class="equal-string">段取り未完</p>
+                </td>
+                <td>
+                  <p class="p-height">：白</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p class="equal-string">段取り完了</p>
+                </td>
+                <td>
+                  <p class="p-height">：青</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p class="equal-string">実行中</p>
+                </td>
+                <td>
+                  <p class="p-height">：緑</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p class="equal-string">終了</p>
+                </td>
+                <td>
+                  <p class="p-height">：オレンジ</p>
+                </td>
+              </tr>
+            </table>
           </v-container>
         </v-card>
       </v-col>
@@ -404,8 +424,14 @@ export default class TopPage extends Vue {
   border-style: solid;
   background: #c7cbd1;
 }
-.EqualString {
-  text-align-last: justify;
-  text-justify: inter-ideograph;
+.equal-string {
+    width:7em;
+    table-layout:auto;
+    text-align-last: justify;
+    text-justify:inter-ideograph;
+    height: 5px;
+}
+.p-height{
+    height: 5px;
 }
 </style>
