@@ -174,10 +174,20 @@
         <v-card outlined class="fill-height my-5">
           <v-container>
             状態ランプ色<br /><br />
-            段取り未完：白<br />
-            段取り完了：青<br />
-            実&nbsp;&nbsp;&nbsp;&nbsp;行&nbsp;&nbsp;&nbsp;&nbsp;中：緑<br />
-            終&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;了：オレンジ<br />
+            <!-- <ul>
+              <li>段取り未完</li>
+              <li>段取り完了</li>
+              <li>実行中</li>
+              <li>終了</li>
+            </ul> -->
+            <p><span class="EqualString">段取り未完</span>：白</p>
+            <br />
+            <p><span class="EqualString">段取り完了</span>：青</p>
+            <br />
+            <p><span class="EqualString">実行中</span>：緑</p>
+            <br />
+            <p><span class="EqualString">終了</span>：オレンジ</p>
+            <br />
           </v-container>
         </v-card>
       </v-col>
@@ -185,25 +195,25 @@
         <v-row>
           <v-col cols="12" sm="6" class="mt-5">
             <v-btn color="#97afdb" block height="140px" style="font-size: 18px"
-              >ワークストッカ<br />ビジョン補正</v-btn
+              >加工機<br />ビジョン補正</v-btn
             >
           </v-col>
           <v-col cols="12" sm="6" class="mt-5">
             <v-btn color="#97afdb" block height="140px" style="font-size: 18px"
-              >加工機<br />ビジョン補正</v-btn
+              >ワークストッカ<br />ビジョン補正</v-btn
             >
           </v-col>
         </v-row>
         <v-row>
           <v-col cols="12" sm="6">
-            <v-btn color="#97afdb" block height="140px" style="font-size: 18px"
+            <!-- <v-btn color="#97afdb" block height="140px" style="font-size: 18px"
               >ロボット<br />原位置復帰</v-btn
-            >
+            > -->
           </v-col>
           <v-col cols="12" sm="6">
-            <v-btn color="#c7cbd1" block height="140px" style="font-size: 18px"
+            <!-- <v-btn color="#c7cbd1" block height="140px" style="font-size: 18px"
               >サイクル<br />停止</v-btn
-            >
+            > -->
           </v-col>
         </v-row>
       </v-col>
@@ -393,5 +403,9 @@ export default class TopPage extends Vue {
   border-color: #0096;
   border-style: solid;
   background: #c7cbd1;
+}
+.EqualString {
+  text-align-last: justify;
+  text-justify: inter-ideograph;
 }
 </style>
